@@ -24,7 +24,7 @@ namespace IntegrationTest.Api.Test
 				new AuthenticationProperties(), "FakeScheme")));
 		}
 
-		public virtual async Task<PolicyAuthorizationResult> AuthorizeAsync(AuthorizationPolicy policy,
+        public virtual async Task<PolicyAuthorizationResult> AuthorizeAsync(AuthorizationPolicy policy,
 			AuthenticateResult authenticationResult, HttpContext context, object resource)
 		{
 			return await Task.FromResult(PolicyAuthorizationResult.Success());

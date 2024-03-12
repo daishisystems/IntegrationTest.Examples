@@ -5,22 +5,22 @@ namespace IntegrationTest.Api.Controllers
 {
 	[ApiController]
 	[Route("api/[controller]")]
-	public class MoviesController : ControllerBase
+	public class MembersController : ControllerBase
 	{
 		private static readonly string[] Movies = new[]
 		{
-			"Mission Impossible", "Fast and Furious", "World War Z"
+			"Mission Impossible", "John Smith", "Jane Doe"
 		};
 
-		private readonly ILogger<MoviesController> _logger;
+		private readonly ILogger<MembersController> _logger;
 
-		public MoviesController(ILogger<MoviesController> logger)
+		public MembersController(ILogger<MembersController> logger)
 		{
 			_logger = logger;
 		}
 
 		[Authorize]
-		[HttpGet(Name = "get-movies")]
+		[HttpGet(Name = "get-members")]
 		public IActionResult Get()
 		{
 			try
@@ -29,7 +29,7 @@ namespace IntegrationTest.Api.Controllers
 			}
 			catch (Exception ex)
 			{
-				_logger.LogError(ex.Message);
+                _logger.LogError(ex.Message);
 				return BadRequest();
 			}
 		}

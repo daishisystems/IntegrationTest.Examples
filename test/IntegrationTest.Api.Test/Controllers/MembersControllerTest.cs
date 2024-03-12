@@ -3,16 +3,16 @@
 namespace IntegrationTest.Api.Test.Controllers
 {
 	[TestClass]
-	public class MoviesControllerTest
+	public class MembersControllerTest
 	{
 		[TestMethod]
-		public async Task GetMovies_ShouldReturn200StatusCode()
+		public async Task GetMembers_ShouldReturn200StatusCode()
 		{
 			//Setup
 			var client = TestClient.GetTestClient();
 
 			//arrange
-			var response = await client.GetAsync("api/Movies");
+			var response = await client.GetAsync("api/members");
 
 			//Assert
 			Assert.IsTrue(response.StatusCode == HttpStatusCode.OK);
