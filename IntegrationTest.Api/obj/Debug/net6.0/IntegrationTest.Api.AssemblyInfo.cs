@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntegrationTest.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3e7374f6ca1ca42756c93d3bc39b4506292c902")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93b0156c7d4fc0634245957c6fb8100f9d5ecac8")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntegrationTest.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntegrationTest.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

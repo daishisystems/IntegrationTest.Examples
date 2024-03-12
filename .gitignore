@@ -11,3 +11,11 @@ IntegrationTest.Api\obj
 /test/IntegrationTest.Api.Test/bin
 /database/IntegrationTest.Database/IntegrationTest.Database.dbmdl
 /IntegrationTest.Api/bin
+*.jfm
+IntegrationTest.Api/obj/Debug/net6.0/apphost.exe
+IntegrationTest.Api/obj/Debug/net6.0/IntegrationTest.Api.AssemblyInfoInputs.cache
+IntegrationTest.Api/obj/Debug/net6.0/IntegrationTest.Api.dll
+IntegrationTest.Api/obj/Debug/net6.0/IntegrationTest.Api.pdb
+IntegrationTest.Api/obj/Debug/net6.0/IntegrationTest.Api.sourcelink.json
+IntegrationTest.Api/obj/Debug/net6.0/ref/IntegrationTest.Api.dll
+IntegrationTest.Api/obj/Debug/net6.0/refint/IntegrationTest.Api.dll

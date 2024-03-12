@@ -9,7 +9,7 @@ namespace IntegrationTest.Api.Controllers
 	{
 		private static readonly string[] Movies = new[]
 		{
-			"Mission Impossible", "John Smith", "Jane Doe"
+			"John Smith", "Jane Doe"
 		};
 
 		private readonly ILogger<MembersController> _logger;
