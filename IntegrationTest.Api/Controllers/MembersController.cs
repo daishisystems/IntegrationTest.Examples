@@ -4,10 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace IntegrationTest.Api.Controllers
 {
 	[ApiController]
-	[Route("api/[controller]")]
+    [Authorize]
+    [Route("api/[controller]")]
 	public class MembersController : ControllerBase
 	{
-		private static readonly string[] Movies = new[]
+		private static readonly string[] Members = new[]
 		{
 			"John Smith", "Jane Doe"
 		};
@@ -19,13 +20,12 @@ namespace IntegrationTest.Api.Controllers
 			_logger = logger;
 		}
 
-		[Authorize]
 		[HttpGet(Name = "get-members")]
 		public IActionResult Get()
 		{
 			try
 			{
-				return Ok(Movies);
+				return Ok(Members);
 			}
 			catch (Exception ex)
 			{

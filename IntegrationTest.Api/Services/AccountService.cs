@@ -58,7 +58,7 @@ namespace IntegrationTest.Api.Services
 			{
 				return new LoginResponseDto
 				{
-					Message = "Username or password doesnot match"
+					Message = "Username or password does not match"
 				};
 			}
 		}
